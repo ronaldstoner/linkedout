@@ -1,0 +1,184 @@
+/* Reset browser default styles */
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set global font and background color */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #e9e5df;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    color: white;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main section styles */
+main {
+    margin: 40px;
+}
+
+/* Profile section styles */
+#profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#profile h2 {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+/* Interests section styles */
+#interests {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#interests h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#interests ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+#interests li {
+    margin-bottom: 10px;
+}
+
+/* Experience section styles */
+#experience {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#experience h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#experience ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+#experience li {
+    margin-bottom: 10px;
+}
+
+/* Recommendations section styles */
+#recommendations {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#recommendations h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#recommendations ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+#recommendations li {
+    margin-bottom: 10px;
+}
+
+#recommendations h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Certifications section styles */
+#certifications {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+#certifications h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#certifications ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+#certifications li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #e9e5df;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e9e5df;
+}
+
+/* LinkedOut Logo */
+.logo {
+    color: #0a66c2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Banner and Profile Icon */
+.banner {
+    background-color: #ccc;
+    height: 160px;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+.profile-icon {
+    background-color: #000000;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+}
