@@ -2,15 +2,22 @@ const config = {
     name: "John Doe",
     currentJob: "Software Engineer",
     location: "Milan, Lombardy, Italy",
+    about: "I'm a cool sufer duder with a cool attitude",
     pastJobs: [
         "Web Developer at XYZ Company",
         "Intern at ABC Corporation"
     ],
-    interests: [
-	 "Snowboarding",
-	 "Baseball", 
-	 "PokemonGO"
+    certifications: [
+        "Certified Web Developer",
+        "AWS Certified Developer",
+        "Scrum Master Certification"
     ],
+    skills: [
+     "Microsoft Excel",
+     "Microsoft Access",
+     "Microsoft Bob",
+     "Doom"
+    ], 
     recommendations: [
         {
             name: "Jane Smith",
@@ -23,10 +30,10 @@ const config = {
             content: "John's problem-solving skills are exceptional, and he always delivers high-quality work."
         }
     ],
-    certifications: [
-        "Certified Web Developer",
-        "AWS Certified Developer",
-        "Scrum Master Certification"
+    interests: [
+	 "Snowboarding",
+	 "Baseball", 
+	 "PokemonGO"
     ]
 };
 
@@ -39,6 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	${config.location}
     `;
 
+    document.getElementById("about").innerHTML = `
+        <h2>About</h2>
+        <p>${config.about}</p>
+    `;
+
     document.getElementById("experience").innerHTML = `
         <h2>Experience</h2>
         <ul>
@@ -46,15 +58,23 @@ document.addEventListener("DOMContentLoaded", function () {
         </ul>
     `;
 
-    document.getElementById("interests").innerHTML = `
-        <h2>Interests</h2>
-	<ul>
-	    ${config.interests.map(interest => `
-	       <li>
-	           <p>${interest}</p>
-	       </li>
-	    `).join("")}
-	</ul>
+    document.getElementById("certifications").innerHTML = `
+        <h2>Licenses & Certifications</h2>
+        <ul>
+            ${config.certifications.map(certification => `<li>${certification}</li>`).join("")}
+        </ul>
+    `;
+
+
+    document.getElementById("skills").innerHTML = `
+        <h2>Skills</h2>
+    <ul>
+        ${config.skills.map(skill => `
+           <li>
+               <p>${skill}</p>
+           </li>
+        `).join("")}
+    </ul>
     `;
 
     document.getElementById("recommendations").innerHTML = `
@@ -70,10 +90,15 @@ document.addEventListener("DOMContentLoaded", function () {
         </ul>
     `;
 
-    document.getElementById("certifications").innerHTML = `
-        <h2>Certifications</h2>
-        <ul>
-            ${config.certifications.map(certification => `<li>${certification}</li>`).join("")}
-        </ul>
+    document.getElementById("interests").innerHTML = `
+        <h2>Interests</h2>
+	<ul>
+	    ${config.interests.map(interest => `
+	       <li>
+	           <p>${interest}</p>
+	       </li>
+	    `).join("")}
+	</ul>
     `;
+
 });

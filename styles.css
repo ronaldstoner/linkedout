@@ -37,7 +37,7 @@ main {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #profile h1 {
@@ -51,25 +51,25 @@ main {
     margin-bottom: 10px;
 }
 
-/* Interests section styles */
-#interests {
+/* About section styles */
+#about {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-#interests h2 {
+#about h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-#interests ul {
+#about ul {
     list-style-type: none;
     margin-left: 20px;
 }
 
-#interests li {
+#about li {
     margin-bottom: 10px;
 }
 
@@ -92,6 +92,49 @@ main {
 }
 
 #experience li {
+    margin-bottom: 10px;
+}
+
+/* Certifications section styles */
+#certifications {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#certifications h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#certifications ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+#certifications li {
+    margin-bottom: 10px;
+}
+
+/* Skills section styles */
+#skills {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#skills h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#skills ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+#skills li {
     margin-bottom: 10px;
 }
 
@@ -122,23 +165,25 @@ main {
     margin-bottom: 5px;
 }
 
-/* Certifications section styles */
-#certifications {
+/* Interests section styles */
+#interests {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
-#certifications h2 {
+
+#interests h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-#certifications ul {
+#interests ul {
     list-style-type: none;
     margin-left: 20px;
 }
 
-#certifications li {
+#interests li {
     margin-bottom: 10px;
 }
 
