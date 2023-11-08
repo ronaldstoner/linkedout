@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <br></br>
         <h1>${config.name}</h1>
         <h2>${config.currentJob}</h2>
-	${config.location}
+        ${config.location}
     `;
 
     document.getElementById("about").innerHTML = `
@@ -68,13 +68,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("skills").innerHTML = `
         <h2>Skills</h2>
-    <ul>
-        ${config.skills.map(skill => `
-           <li>
-               <p>${skill}</p>
-           </li>
-        `).join("")}
-    </ul>
+        <ul>
+            ${config.skills.map(skill => `
+               <li>
+                   <p>${skill}</p>
+               </li>
+            `).join("")}
+        </ul>
     `;
 
     document.getElementById("recommendations").innerHTML = `
@@ -92,13 +92,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("interests").innerHTML = `
         <h2>Interests</h2>
-	<ul>
-	    ${config.interests.map(interest => `
-	       <li>
-	           <p>${interest}</p>
-	       </li>
-	    `).join("")}
-	</ul>
+    	<ul>
+    	    ${config.interests.map(interest => `
+    	       <li>
+    	           <p>${interest}</p>
+    	       </li>
+    	    `).join("")}
+    	</ul>
     `;
 
 });
