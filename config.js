@@ -2,7 +2,7 @@ const config = {
     name: "John Doe",
     currentJob: "Software Engineer",
     location: "Milan, Lombardy, Italy",
-    about: "I'm a cool sufer duder with a cool attitude",
+    about: "I'm a cool surfer duder with a cool attituder",
     pastJobs: [
         "Web Developer at XYZ Company",
         "Intern at ABC Corporation"
@@ -37,18 +37,33 @@ const config = {
     ]
 };
 
-// User Icon
+// Banner and User Icon Images
 window.addEventListener('DOMContentLoaded', () => {
-  const userImg = document.querySelector('.user-icon img');
+  const bannerImg = document.querySelector('.banner img');
+  const userIconImg = document.querySelector('.user-icon img');
   
+  // Check if banner.png exists
+  fetch('images/banner.png')
+    .then(response => {
+      if (response.ok) {
+        bannerImg.src = 'images/banner.png'; // Set the banner image source
+        bannerImg.style.display = 'block';
+      } else {
+        bannerImg.style.display = 'none'; // Hide the banner image
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+
   // Check if user.png exists
   fetch('images/user.png')
     .then(response => {
       if (response.ok) {
-        userImg.src = 'images/user.png'; // Set the image source
-        userImg.style.display = 'block';
+        userIconImg.src = 'images/user.png'; // Set the user icon image source
+        userIconImg.style.display = 'block';
       } else {
-        userImg.style.display = 'none'; // Hide the image
+        userIconImg.style.display = 'none'; // Hide the user icon image
       }
     })
     .catch(error => {

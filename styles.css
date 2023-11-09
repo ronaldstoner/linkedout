@@ -51,8 +51,6 @@ main {
     margin-bottom: 10px;
 }
 
-
-
 /* About section styles */
 #about {
     background-color: white;
@@ -210,9 +208,16 @@ footer .container {
 /* Banner and User Icon */
 .banner {
     background-color: #ccc;
-    height: 160px;
+    height: 200px;
     position: relative;
     border-radius: 5px 5px 0 0;
+}
+
+.banner img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .user-icon {
@@ -232,14 +237,4 @@ footer .container {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.user-icon .initial {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-size: 40px;
-  color: #fff;
 }
