@@ -37,6 +37,25 @@ const config = {
     ]
 };
 
+// User Icon
+window.addEventListener('DOMContentLoaded', () => {
+  const userImg = document.querySelector('.user-icon img');
+  
+  // Check if user.png exists
+  fetch('images/user.png')
+    .then(response => {
+      if (response.ok) {
+        userImg.src = 'images/user.png'; // Set the image source
+        userImg.style.display = 'block';
+      } else {
+        userImg.style.display = 'none'; // Hide the image
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+});
+
 // Access config data and update the HTML elements accordingly
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("profile").innerHTML = `
